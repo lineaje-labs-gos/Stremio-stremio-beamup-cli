@@ -12,8 +12,7 @@
     "targets": [
       "node12-linux-x64",
       "node12-macos-x64",
-      "node12-win-x64",
-      "node12-win-x86"
+      "node12-win-x64"
     ],
     "outputPath": "build"
   },
@@ -43,7 +42,13 @@
   "dependencies": {
     "async-file": "2.0.2",
     "commander": "6.1.0",
-    "crypto-js": "4.0.0",
+    "crypto-js": ">=4.2.0",
     "node-ssh": "13.1.0"
+  },
+  "overrides": {
+    "crypto-js": ">=4.2.0"
+  },
+  "resolutions": {
+    "crypto-js": ">=4.2.0"
   }
 }
